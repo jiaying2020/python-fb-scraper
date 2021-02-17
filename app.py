@@ -21,7 +21,7 @@ email.send_keys('xxxxxx@gmail.com')
 password.send_keys('xxxx')
 password.submit()
 time.sleep(3)
-chrome.get('https://www.facebook.com/jiaying.lee.18')
+chrome.get('https://www.facebook.com/請填入fb帳號')
 
 for x in range(1, 4):
     chrome.execute_script("window.scrollTo(0,document.body.scrollHeight)")
@@ -30,7 +30,7 @@ for x in range(1, 4):
 soup = BeautifulSoup(chrome.page_source, 'html.parser')
 
 titles = soup.find_all(
-    'span', {'class': 'a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7'})
+    'span', {'class': '請填入class'})
 
 for title in titles:
 
